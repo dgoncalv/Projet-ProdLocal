@@ -56,8 +56,15 @@ Le service correspondant est bd
     * url du registry : http://registry.univ-lr.fr:80 
 
     * url du registry : http://registry.univ-lr.fr:81
-    * **IMPORTANT** : ajouter ce registry dans la config du deamon docker, exemple voir, la capture ci-dessous pour la config de docker sous OSX : 
-    <div align="center" ><img alt="config registry docker OSX" src="ressources/osx-docker-registry-config.png" width="500" height="(500" /></div>
+    * **IMPORTANT** : ajouter ce registry dans la config du deamon docker, exemple voir, la capture ci-dessous pour la config de docker.
+    ```docker
+      {
+      "insecure-registries":[
+         "registry.univ-lr.fr:80",
+         "registry.univ-lr.fr:81"
+      ]
+      }
+    ```
 
 # Mise en oeuvre
 
